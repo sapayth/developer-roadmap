@@ -19,8 +19,6 @@ pnpm-debug.log*
 
 
 # environment variables
-.env
-.env.production
 
 # macOS-specific files
 .DS_Store
@@ -31,3 +29,4 @@ tests-examples
 *.csveditor/
 
 packages/editor
+config.bat
