@@ -1,14 +1,39 @@
 {
-  "prettier.documentSelectors": ["**/*.astro"],
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ],
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "tailwindCSS.experimental.classRegex": [
-    ["\\b\\w+[cC]lassName\\s*=\\s*[\"']([^\"']*)[\"']"],
-    ["\\b\\w+[cC]lassName\\s*=\\s*`([^`]*)`"],
-    ["[\\w]+[cC]lassName[\"']?\\s*:\\s*[\"']([^\"']*)[\"']"],
-    ["[\\w]+[cC]lassName[\"']?\\s*:\\s*`([^`]*)`"],
-    ["cva\\(((?:[^()]|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cx\\(((?:[^()]|\\([^()]*\\))*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-  ]
+    [
+      "\\b\\w+[cC]lassName\\s*=\\s*[\"']([^\"']*)[\"']"
+    ],
+    [
+      "\\b\\w+[cC]lassName\\s*=\\s*`([^`]*)`"
+    ],
+    [
+      "[\\w]+[cC]lassName[\"']?\\s*:\\s*[\"']([^\"']*)[\"']"
+    ],
+    [
+      "[\\w]+[cC]lassName[\"']?\\s*:\\s*`([^`]*)`"
+    ],
+    [
+      "cva\\(((?:[^()]|\\([^()]*\\))*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    [
+      "cx\\(((?:[^()]|\\([^()]*\\))*)\\)",
+      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+    ]
+  ],
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
