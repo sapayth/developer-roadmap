@@ -39,6 +39,8 @@ pnpm-debug.log*
 
 
 # environment variables
+.env
+.env.production
 
 
 
@@ -60,4 +62,3 @@ tests-examples
 
 packages/editor
 
-config.bat
